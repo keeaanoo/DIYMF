@@ -180,6 +180,16 @@ td {
   cursor: pointer;
 }
 
+td:first-child {
+  border: none !important;
+  background-color: transparent !important;
+  color: #fff; /* tetap terlihat */
+  cursor: default;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 8px;
+}
+
 td:hover {
   background-color: #3a3a3a;
 }
@@ -269,3 +279,4 @@ td:hover {
 .nav-btn:hover {
   transform: scale(1.2);
 }
+
