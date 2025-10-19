@@ -1,0 +1,271 @@
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.workout-page {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.back-button img {
+  width: 24px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  margin-bottom: 80%;
+
+}
+
+.back-btn:hover {
+  transform: translateX(-4px);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 80%;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 3px 0 0 0;
+}
+
+/* Timer Section */
+.timer-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#timer-display {
+  font-size: 150px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.timer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.start {
+  background-color: #5b7fff;
+  color: white;
+}
+
+.stop {
+  background-color: #e04f4f;
+  color: white;
+}
+
+.reset {
+  background-color: #aaa;
+  color: #222;
+}
+
+/* Bottom Section */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+/* === CALENDAR === */
+.calendar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* HEADER CARD */
+.calendar-header {
+  background-color: #2b2b2b;
+  border-radius: 12px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  gap: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#month-name {
+  min-width: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.nav-btn:hover {
+  transform: scale(1.2);
+}
+
+/* BODY CARD (tabel) */
+.calendar-body-card {
+  background-color: #2b2b2b;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #999999;
+  width: calc(100% / 8);
+  height: 32px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+th {
+  color: #ccc;
+  font-weight: 600;
+  border: none;
+}
+
+td {
+  background-color: #1e1e1e;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: #3a3a3a;
+}
+
+.blank {
+  background-color: transparent !important;
+  border: none;
+  cursor: default;
+}
+
+.checked {
+  background-color: #4e8d5a !important;
+  border: none;
+}
+
+/* Slight spacing for visual balance */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+  margin-top: 40px;
+}
+
+
+
+/* === WORKOUT LIBRARY === */
+.workout-library {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.library-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tab {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #555;
+  border-radius: 25px;
+  padding: 6px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab:hover,
+.tab.active {
+  background-color: white;
+  color: black;
+}
+
+.library-card {
+  background-color: #2b2b2b;
+  border-radius: 16px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.library-card span {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.nav-btn:hover {
+  transform: scale(1.2);
+}

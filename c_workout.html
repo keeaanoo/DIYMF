@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORKOUT</title>
+    <link rel="stylesheet" href="c_workout.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="workout-page">
+      <!-- Header -->
+            <div class="header">
+        <div class="back-button">
+          <a href="index.html">
+            <img
+              src="assets/3f835b41901f49c16aaf094bb9415090.svg"
+              alt="Back"
+            />
+          </a>
+        </div>
+
+        <div class="title-section">
+          <h1 class="title">WORKOUT</h1>
+          <p class="subtitle">Hell yea brotha!!</p>
+        </div>
+      </div>
+
+      <!-- Timer Section -->
+      <section class="timer-section">
+        <div id="timer-display">00:00:00</div>
+        <div class="timer-buttons">
+          <button id="start-btn" class="btn start">Start</button>
+          <button id="stop-btn" class="btn stop">Stop</button>
+          <button id="reset-btn" class="btn reset">Reset</button>
+        </div>
+      </section>
+
+      <!-- Bottom Section -->
+      <section class="bottom-section">
+        <!-- Calendar -->
+<div class="calendar">
+  <!-- HEADER CARD -->
+  <div class="calendar-header">
+    <button id="prev-month" class="nav-btn">◁</button>
+    <span id="month-name">October</span>
+    <button id="next-month" class="nav-btn">▷</button>
+  </div>
+
+  <!-- BODY CARD -->
+  <div class="calendar-body-card">
+    <table id="calendar-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>PUSH</th>
+          <th>PULL</th>
+          <th>LEGS</th>
+          <th></th>
+          <th>PUSH</th>
+          <th>PULL</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>W1</td>
+          <td></td><td></td><td></td><td class="blank"></td>
+          <td></td><td></td><td class="blank"></td>
+        </tr>
+        <tr>
+          <td>W2</td>
+          <td></td><td></td><td></td><td class="blank"></td>
+          <td></td><td></td><td class="blank"></td>
+        </tr>
+        <tr>
+          <td>W3</td>
+          <td></td><td></td><td></td><td class="blank"></td>
+          <td></td><td></td><td class="blank"></td>
+        </tr>
+        <tr>
+          <td>W4</td>
+          <td></td><td></td><td></td><td class="blank"></td>
+          <td></td><td></td><td class="blank"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+        <!-- Workout Library -->
+        <div class="workout-library">
+          <div class="library-tabs">
+            <button class="tab active" data-type="push">PUSH</button>
+            <button class="tab" data-type="pull">PULL</button>
+            <button class="tab" data-type="legs">LEGS</button>
+          </div>
+
+          <div class="library-card">
+            <button class="nav-btn prev">◁</button>
+            <span id="exercise-name">Bench press</span>
+            <button class="nav-btn next">▷</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="c_workout.js"></script>
+  </body>
+</html>

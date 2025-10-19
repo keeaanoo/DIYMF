@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deadlines</title>
+    <link rel="stylesheet" href="c_deadlines.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="deadlines-container">
+      <div class="header">
+        <div class="back-button">
+          <a href="index.html">
+            <img
+              src="assets/3f835b41901f49c16aaf094bb9415090.svg"
+              alt="Back"
+            />
+          </a>
+        </div>
+
+        <div class="title-section">
+          <h1 class="page-title">DEADLINES</h1>
+          <p class="page-subtitle">You better get to Work!</p>
+        </div>
+      </div>
+
+      <div class="add-deadline">
+        <label class="add-label">Add deadline (+)</label>
+        <div class="input-row">
+          <input
+            type="text"
+            id="deadline-title"
+            placeholder="What is it?"
+            required
+          />
+          <input type="date" id="deadline-date" required />
+          <button onclick="addDeadline()" class="add-btn">Add</button>
+
+        </div>
+      </div>
+
+      <ul id="deadline-list" class="deadline-list"></ul>
+    </div>
+
+    <script src="c_deadlines.js"></script>
+  </body>
+</html>
